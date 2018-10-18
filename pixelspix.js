@@ -4,6 +4,7 @@ const Data = require("./data.json")
 
 Pixel.on('ready', () => {
 Pixel.user.setActivity("FIRST STARTUP YAY!")
+});
 
 
 Pixel.login(process.env.PixelTK)
