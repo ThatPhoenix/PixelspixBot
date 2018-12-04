@@ -1,9 +1,8 @@
 const Discord = require("discord.js");
-const errors = require("../errors.js");
 
 module.exports.run = async (Pixel, message, args) => {
 
-    if(!message.member.hasPermission("KICK_MEMBERS")) return errors.noPerms(message, "KICK_MEMBERS");
+    if(!message.member.hasPermission("KICK_MEMBERS")) r
     if(args[0] == "help"){
       message.reply("Usage: !kick <user> <reason>");
       return;
@@ -11,7 +10,7 @@ module.exports.run = async (Pixel, message, args) => {
     let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!kUser) return errors.cantfindUser(message.channel);
     let kReason = args.join(" ").slice(22);
-    if(kUser.hasPermission("MANAGE_MESSAGES")) return errors.equalPerms(message, kUser, "MANAGE_MESSAGES");
+    if(kUser.hasPermission("MANAGE_MESSAGES")) 
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("~Kick~")
