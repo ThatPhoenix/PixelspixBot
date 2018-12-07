@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (Pixel, message, args) => {
 
-    if(!message.member.hasPermission("KICK_MEMBERS")) r
+    if(!message.member.hasPermission("KICK_MEMBERS"))
     if(args[0] == "help"){
       message.reply("Usage: !kick <user> <reason>");
       return;
