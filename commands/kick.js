@@ -12,7 +12,7 @@ module.exports.run = async (Pixel, message, args) => {
     let kReason = args.join(" ").slice(22);
     if(kUser.hasPermission("MANAGE_MESSAGES")) 
 
-    let kickEmbed = new Discord.RichEmbed()
+    var kickEmbed = new Discord.RichEmbed()
     .setDescription("~Kick~")
     .setColor("#e56b00")
     .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
