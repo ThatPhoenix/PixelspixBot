@@ -6,7 +6,7 @@ exports.run = function(Pixel, message, args) {
     .then(message => {
       message.edit(`Pong! :ping_pong: **my ping is** ${message.createdTimestamp - message.createdTimestamp}ms  **DiscordAPI's ping is** ${Pixel.ping}`);
   
-};  
+});  
           };
 
 
