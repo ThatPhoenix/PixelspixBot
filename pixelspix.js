@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Pixel = new Discord.Client();
 const fs = require('fs')
-const settings = require('./settings.json')
+const settings = require('./utils/settings.json')
 require('./utils/events.js')(Pixel);
 
 
