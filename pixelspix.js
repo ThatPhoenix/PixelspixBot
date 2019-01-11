@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Pixel = new Discord.Client();
 const fs = require('fs')
 const settings = require('./settings.json')
-require('./events/Handler.js')(Pixel);
+require('./utils/events.js')(Pixel);
 
 
 Pixel.on("message", message => {
