@@ -1,15 +1,20 @@
-const Discord = require('discord.js');
-const green = '#008000';
-const red = '#FF0000';
-const yellow = '#FFD700';
+const Discord = require('discord.js')
 
-exports.run = function(Pixel, message, args) {
-message.channel.send(`Credits:`)
-message.channel.send("Owners: ThatPhoenix, HasanBrandsXD| Administrators: NUT NUT, Elcobrox")
+exports.run = (Pixel, message) => {
+  var embed = new Discord.RichEmbed();
+  embed.setTitle('Pixelspix Credits')
+  embed.setDescription(`**Owners!**: *ThatPhoenix* & *Nands* \n**Administrators**: \n*Elcobrox* \n*NUT NUT*`);
+  embed.setColor('#d604cf');
+
+
+  message.channel.sendEmbed(embed);
+
 };
 
 
 
 exports.help = {
-name: 'test'
+  name: 'credits'
 };
+
+  
