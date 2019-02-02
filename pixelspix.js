@@ -15,7 +15,7 @@ Pixel.on("message", message => {
       let commandFile = require(`./commands/${command}.js`);
       commandFile.run(Pixel, message, args);
     } catch (err) {
-           message.reply(`Uh Oh Something went wrong ${err}`)
+           message.reply(`:x: | Uh Oh Something went wrong **${err}**`)
         
     }
 })
