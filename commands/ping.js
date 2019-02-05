@@ -1,4 +1,4 @@
-const settings = require("../settings.json")
+const settings = ("../utils/settings.json")
 
 exports.run = function(Pixel, message, args) {
  
