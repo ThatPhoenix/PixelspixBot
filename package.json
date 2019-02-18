@@ -12,7 +12,8 @@
     "node": "^10.5.0",
     "sleep": "^5.1.1",
     "fs" : "0.0.1-security",
-    "snekfetch" : "4.0.4"
+    "snekfetch" : "4.0.4",
+    "ddblapi.js" : "0.0.8"
   },
   "engines": {
     "node": "8.x"
