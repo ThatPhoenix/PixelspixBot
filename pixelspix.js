@@ -3,6 +3,7 @@ const Pixel = new Discord.Client();
 const fs = require('fs')
 const settings = require('./utils/settings.json')
 require('./utils/events.js')(Pixel);
+const Load = require("./utils/botlisttest.js")
 
 
 Pixel.on("message", message => {
